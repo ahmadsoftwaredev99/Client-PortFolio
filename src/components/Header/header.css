@@ -1,0 +1,18 @@
+.list{
+    font-size: 1.7rem;
+    font-family: "client";
+}
+.nav-link {
+    display: inline-block;      
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fb2056;
+    transform: scale(1.2);     
+}
+@media screen and (max-width: 1024px) {
+    .nav-img {
+        display: none;
+    }
+}

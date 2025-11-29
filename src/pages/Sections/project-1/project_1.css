@@ -1,0 +1,59 @@
+/* Bigger Cards + Center */
+.card-hover {
+    position: relative;
+    width: 420px;     
+    height: 420px;
+    margin: 0 auto;  
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Card Image */
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
+}
+
+/* Dark Overlay */
+.card-hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+/* Center Text */
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+/* Hover Effects */
+.card-hover:hover .card-img {
+    transform: scale(1.1);
+}
+
+.card-hover:hover::after {
+    opacity: 1;
+}
+
+.card-hover:hover .card-content {
+    opacity: 1;
+}
+
+/* Buttons same width as cards (optional) */
+.btn-wide {
+    width: 420px;
+    text-align: center;
+}

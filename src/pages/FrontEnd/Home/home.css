@@ -1,0 +1,39 @@
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 8rem;
+  color: white;
+  font-family: "client";
+}
+section {
+  height: auto;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  object-fit: cover;
+}
+.clientName {
+  font-size: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .parent {
+    min-height: calc(100vh - 60px); /* smaller height for mobile */
+    padding-bottom: 10rem; /* extra space under video */
+  }
+  .hero-video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+  }
+}

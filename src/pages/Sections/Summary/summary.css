@@ -1,0 +1,26 @@
+.summary h1::selection {
+  background-color: #fb2056;
+}
+.summary h1 {
+  font-family: "client";
+  font-size: 3rem;
+}
+
+.summary{
+  margin-top: 5.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .summary {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-img {
+    display: none;
+  }
+  .logos{
+    display: none;
+  }
+}
