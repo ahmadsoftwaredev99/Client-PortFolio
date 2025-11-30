@@ -1,26 +1,45 @@
+/* Header default */
 header {
-    position: absolute; 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
+    background: transparent; /* initial transparent */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.list{
+/* Background after scroll */
+header.scrolled {
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Navbar brand */
+.client-name {
+    font-family: "client";
+    font-size: 2rem;
+}
+
+/* Nav list */
+.list {
     font-size: 1.7rem;
     font-family: "client";
 }
+
+/* Nav link */
 .nav-link {
     display: inline-block;      
     transition: all 0.3s ease;
+    color: white; /* default text color */
 }
-.client-name{
-    font-family: "client";
-}
+
 .nav-link:hover {
     color: #fb2056;
     transform: scale(1.2);     
 }
+
+/* Responsive */
 @media screen and (max-width: 1024px) {
     .nav-img {
         display: none;

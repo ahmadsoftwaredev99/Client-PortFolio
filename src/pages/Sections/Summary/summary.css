@@ -1,20 +1,55 @@
-.sum{
-  margin-top: 4rem;
+.sum {
+  margin-top: 20rem; /* desktop */
 }
+
 .summary h1::selection {
   background-color: #fb2056;
 }
+
 .summary h1 {
   font-family: "client";
   font-size: 3rem;
 }
 
-.summary{
-  margin-top: 5.5rem;
+.summary {
+  margin-top: 5.5rem; /* desktop */
 }
 
+/* Responsive - tablets and small screens */
 @media screen and (max-width: 1024px) {
+  .sum {
+    margin-top: 10rem; /* reduce top margin */
+  }
   .summary {
-    margin-top: 0;
+    margin-top: 2rem; /* reduce summary section top */
+  }
+  .summary h1 {
+    font-size: 2.5rem; /* heading thoda chota */
+  }
+}
+
+/* Responsive - mobile */
+@media screen and (max-width: 768px) {
+  .sum {
+    margin-top: 6rem;
+  }
+  .summary {
+    margin-top: 1.5rem;
+  }
+  .summary h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .sum {
+    margin-top: 4rem;
+  }
+  .summary {
+    margin-top: 1rem;
+  }
+  .summary h1 {
+    font-size: 1.8rem;
   }
 }

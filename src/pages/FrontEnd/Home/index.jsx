@@ -1,4 +1,4 @@
-import vedioHero from "../../../../public/Vedio/hero-section.mp4"
+import vedio from '/Vedio/index.mp4'
 import Summary from "../../Sections/Summary";
 import Timeline from "../../Sections/timelineCard";
 import Project from "../../Sections/Project"
@@ -10,12 +10,12 @@ const Home = () => {
     <>
       <section>
         <div className="parent">
-          <video className="hero-video" src={vedioHero} autoPlay muted loop>
+          <video className="hero-video" src={vedio} autoPlay muted loop>
           </video>
-          <div className="data">
+          {/* <div className="data">
             <h4>Mechanical Engineering Portfolio</h4>
             <h1 className="clientName">Jonashem</h1>
-          </div>
+          </div> */}
         </div>
       </section>
       <Summary/>
