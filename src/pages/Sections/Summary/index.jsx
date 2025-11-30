@@ -1,6 +1,7 @@
-import "./summary.css";
-import clientPost from "/images/post.png";
 import { logos_images } from "../../../components/constants";
+import clientPost from "../../../assets/images/post.png";
+import "./summary.css";
+
 const Summary = () => {
   return (
     <>

@@ -1,6 +1,6 @@
 import { Button, Col, Form, Input, Row, Space } from "antd";
 import { Link } from "react-router-dom";
-import gmail from "/images/gmail.png";
+import gmail from "../../../assets/images/gmail.png";
 import Title from "antd/es/typography/Title";
 import ProfileLink from "../../../components/profileLink";
 import TextArea from "antd/es/input/TextArea";

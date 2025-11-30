@@ -1,7 +1,8 @@
-import google from "/images/google.png";
-import iphone from "/images/iphone.png";
-import rokect from "/images/rocket.png";
-import car from "/images/car.png";
+import google from "../../assets/images/google.png";
+import iphone from "../../assets/images/iphone.png";
+import rocket from "../../assets/images/rocket.png";
+import car from "../../assets/images/car.png";
+
 export const data = [
   {
     icon: "fa-brands fa-google",
@@ -27,7 +28,7 @@ export const data = [
     title: "Blue Origin - Manufacturing Engineering Intern",
     date: "Sept - Dec 2020",
     location: "Kent, WA",
-    img: rokect,
+    img: rocket,
     desc: "Streamlined New Glenn carbon fiber panels assembly by conducting tolerance stack-up analyses and fixture design.",
   },
   {
@@ -41,10 +42,10 @@ export const data = [
   },
 ];
 
-import appleIphones from "/images/iphoness.png";
-import gear from "/images/gear.png";
-import injection from "/images/injection.png";
-import moon from "/images/moon.png";
+import appleIphones from "../../assets/images/iphoness.png";
+import gear from "../../assets/images/gear.png";
+import injection from "../../assets/images/injection.png";
+import moon from "../../assets/images/moon.png";
 
 export const project = [
   { img: appleIphones, title: "Apple InternShip", other: "InternShip" },
@@ -52,13 +53,13 @@ export const project = [
   { img: gear, title: "FASE Planetry Gear Box", other: "Student Team" },
   { img: injection, title: "Plastic Injection Mold", other: "Personal" },
 ];
+import apple_logo from "../../assets/images/apple-logo.png";
+import google_logo from "../../assets/images/google-logo.png";
+import x_logo from "../../assets/images/x-logo.png";
+import leave_logo from "../../assets/images/leave-logo.png";
+import tesla_logo from "../../assets/images/tesla-logo.png";
+import q_logo from "../../assets/images/Q-logo.png";
 
-import apple_logo from "/images/apple-logo.png";
-import google_logo from "/images/google-logo.png";
-import x_logo from "/images/x-logo.png";
-import leave_logo from "/images/leave-logo.png";
-import tesla_logo from "/images/tesla-logo.png";
-import q_logo from "/images/Q-logo.png";
 
 export const logos_images = [
   { image: apple_logo },

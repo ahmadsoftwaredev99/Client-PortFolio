@@ -1,4 +1,4 @@
-import vedio from '/Vedio/index.mp4'
+import vedio from '../../../assets/Vedio/index.mp4'
 import Summary from "../../Sections/Summary";
 import Timeline from "../../Sections/timelineCard";
 import Project from "../../Sections/Project"
