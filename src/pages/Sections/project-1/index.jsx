@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { project } from "../../../components/constants";
+import PorfileLink from "../../../components/profileLink";
 import "./project_1.css";
 
 const Project_1 = () => {
@@ -22,26 +23,16 @@ const Project_1 = () => {
           {/* CENTER BUTTONS */}
           <div className="col-12 d-flex flex-column align-items-center gap-3 mt-3">
             <Link to="/projects">
-              <button className="bg-dark rounded-pill px-4 py-2 text-white fs-5 btn-wide">
-                Project Page
-              </button>
+              <button className="bg-dark rounded-pill px-4 py-2 text-white fs-5 btn-wide">Project Page</button>
             </Link>
-            <Link to="/">
-              <button className="bg-dark rounded-pill px-4 py-2 text-white fs-5 btn-wide">
-                Home
-              </button>
+            <Link to="/resume">
+              <button className="bg-dark rounded-pill px-4 py-2 text-white fs-5 btn-wide">Resume</button>
             </Link>
           </div>
         </div>
       </div>
-      {/* FULL WIDTH FOOTER (OUTSIDE CONTAINER) */}
-      <div className="w-100 mt-5 bg-light py-3 d-flex justify-content-between align-items-center px-5">
-        <Link className="d-flex align-items-center gap-2 link-offset-2 link-underline link-underline-opacity-0" to="">
-          <i className="fa-brands fa-linkedin fs-3" style={{ color: "#0A66C2" }}></i>
-          <span className="fs-5">LinkedIn</span>
-        </Link>
-        <p className="m-0 fs-5">Email: jonshem@gmail.com</p>
-      </div>
+      {/*  FULL-WIDTH RESPONSIVE ROW  */}
+      <PorfileLink/>
     </section>
   );
 };

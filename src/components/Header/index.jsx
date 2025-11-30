@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
-import navImage from "../../../public/images/nav-title.png"
 import './header.css'
 const Header = () => {
     return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark ">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            <img src={navImage} alt="" className="nav-img" />
+          <h1 className="client-name">JS</h1>
           </Link>
           <button
             className="navbar-toggler"

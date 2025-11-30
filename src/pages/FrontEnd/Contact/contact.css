@@ -1,0 +1,57 @@
+/* MAIN WRAPPER */
+.contact {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* BACKGROUND IMAGE */
+.contact-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  background-image: url("/images/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -12;
+}
+
+/* CONTENT SECTION */
+.contact-content {
+  margin-top: 70vh;
+  padding: 60px 40px;
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* FOOTER */
+.contact-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .contact-info-col {
+    margin-top: 20px;   /* mobile spacing */
+  }
+}
+
+/*  MOBILE RESPONSIVE FIX */
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 120vh;  
+  }
+
+  .contact-content {
+    margin-top: 120vh; 
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

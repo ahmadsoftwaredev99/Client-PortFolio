@@ -2,8 +2,8 @@ import vedioHero from "../../../../public/Vedio/hero-section.mp4"
 import Summary from "../../Sections/Summary";
 import Timeline from "../../Sections/timelineCard";
 import Project from "../../Sections/Project"
-import "./home.css";
 import Project_1 from "../../Sections/project-1";
+import "./home.css";
 
 const Home = () => {
   return (

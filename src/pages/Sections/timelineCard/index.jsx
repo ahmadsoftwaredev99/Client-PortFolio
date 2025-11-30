@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import {data} from '../../../components/constants'
-import "./timeline.css"; // custom CSS
+import "./timeline.css"; 
 export default function Timeline() {
   return (
     <div className="timeline-container position-relative mb-5">

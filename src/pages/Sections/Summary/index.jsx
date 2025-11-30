@@ -1,11 +1,11 @@
 import "./summary.css";
-import clientPost from "../../../../public/images/post.png";
-import logos from '../../../../public/images/logos.png'
+import clientPost from "/images/post.png";
+import { logos_images } from "../../../components/constants";
 const Summary = () => {
   return (
     <>
       <section className="summary">
-        <div className="container">
+        <div className="container sum">
           <div className="row">
             <div className="col-12 ">
               <div className="summary text-center">
@@ -15,7 +15,7 @@ const Summary = () => {
                   recruiter, fellow engineer, friend, or lost stranger, I hope
                   you enjoy the ride.
                 </p>
-                <img src={clientPost} alt="level" className="timeline-img" />
+                <img src={clientPost} alt="level" className="img-fluid" />
               </div>
             </div>
             <div className="col-12 col-md-6">
@@ -38,10 +38,15 @@ const Summary = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-12">
-              <div className="text-center mt-5">
-                <h1>Experience</h1>
-                <img src={logos} alt="logos" className="logos" />
+            <div className="text-center mt-5">
+              <h1>Experience</h1>
+
+              <div className="row justify-content-center align-items-center mt-4">
+                {logos_images.map((items, index) => (
+                  <div className="col-12 col-md-3 d-flex justify-content-center mb-3"key={index}>
+                    <img src={items?.image}alt="logos" style={{width: "100%",maxWidth: "150px",height: "auto",}}/>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
