@@ -205,11 +205,11 @@
 }
 /* Tablets */
 @media screen and (max-width: 1024px) {
-  .sum {
-    margin-top: 2rem; /* reduced more */
+  .summary{
+    margin-top: -100px;
   }
-  .summary {
-    margin-top: rem;
+  .sum{
+    margin-top: 100px;
   }
   .summary h1 {
     font-size: 2.3rem;

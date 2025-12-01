@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="contact-hero">
         <img src={contact} alt="contact" className="contact-img" />
       </div>
-      <div className="contact-content container mt-5">
+      <div className="contact-content container mt-3">
         <Form layout="vertical">
           <Row gutter={[40, 40]}>
             <Col xs={24} md={12}>
