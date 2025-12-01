@@ -30,7 +30,7 @@
 /* MOBILE FIX */
 @media (max-width: 768px) {
   .contact-hero {
-    height: 65vh;
+    height: 40vh;
   }
 
   .contact-content {

@@ -32,10 +32,10 @@
 /* Tablet (1024px and below) */
 @media screen and (max-width: 1024px) {
   .parent {
-    min-height: 70vh;
+    min-height: 56vh;
   }
   .hero-img {
-    height: 50vh;
+    height: 40vh;
   }
   .client-name h1 {
     font-size: 2rem;
@@ -48,11 +48,11 @@
 /* Mobile Landscape (768px and below) */
 @media screen and (max-width: 768px) {
   .parent {
-    min-height: 60vh;
+    min-height: 40vh;
   }
 
   .hero-img {
-    height: 65vh;
+    height: 40vh;
   }
 
   .client-name h1 {
@@ -67,11 +67,10 @@
 /* Mobile Phones (576px and below) */
 @media screen and (max-width: 576px) {
   .parent {
-    min-height: 55vh;
+    min-height: 40vh;
   }
-
   .hero-img {
-    height: 65vh;
+    height: 40vh;
   }
 
   .client-name h1 {

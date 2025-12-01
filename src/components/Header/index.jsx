@@ -18,10 +18,10 @@ const Header = () => {
   // Close menu on link click
   const closeMenu = () => {
     setIsOpen(false);
-  };
+  };  
 
   return (
-    <header className={scrolled ? "header scrolled" : "header"}>
+    <header className={`${scrolled ? "header scrolled" : "header"} ${isOpen ? "menu-open" : ""}`}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
 

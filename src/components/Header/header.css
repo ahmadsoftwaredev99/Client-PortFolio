@@ -39,9 +39,19 @@ header.scrolled {
     transform: scale(1.2);     
 }
 
-/* Responsive */
-@media screen and (max-width: 1024px) {
-    .nav-img {
-        display: none;
+/* Mobile menu open full-width background */
+@media (max-width: 992px) {
+    header.menu-open {
+        background: rgba(0, 0, 0, 0.85);  /* SAME opacity */
+        backdrop-filter: blur(4px);       /* Optional clean blur effect */
+    }
+
+    .navbar-collapse.show {
+        background: transparent !important; /* background ab header se aayega */
+        padding: 20px;
+    }
+
+    .nav-link {
+        color: white !important;
     }
 }
