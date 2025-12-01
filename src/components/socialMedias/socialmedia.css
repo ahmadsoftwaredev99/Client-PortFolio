@@ -18,7 +18,7 @@
   gap: 0.5em;
 }
 
-.card1 {
+.cards1 {
   width: 60px;
   height: 60px;
   outline: none;
@@ -36,7 +36,7 @@
   fill: #cc39a4;
 }
 
-.card2 {
+.cards2 {
  width: 60px;
   height: 60px;
   outline: none;
@@ -53,7 +53,7 @@
   fill: #03A9F4;
 }
 
-.card3 {
+.cards3 {
   width: 60px;
   height: 60px;
   outline: none;
@@ -69,7 +69,7 @@
   margin-left: 1.5em;
 }
 
-.card4 {
+.cards4 {
   width: 60px;
   height: 60px;
   outline: none;
@@ -86,42 +86,42 @@
   fill: #8c9eff;
 }
 
-.card1:hover {
+.cards1:hover {
   cursor: pointer;
   scale: 1.1;
   background-color: #cc39a4;
 }
 
-.card1:hover .instagram {
+.cards1:hover .instagram {
   fill: white;
 }
 
-.card2:hover {
+.cards2:hover {
   cursor: pointer;
   scale: 1.1;
   background-color: #03A9F4;
 }
 
-.card2:hover .twitter {
+.cards2:hover .twitter {
   fill: white;
 }
 
-.card3:hover {
+.cards3:hover {
   cursor: pointer;
   scale: 1.1;
   background-color: black;
 }
 
-.card3:hover .github {
+.cards3:hover .github {
   fill: white;
 }
 
-.card4:hover {
+.cards4:hover {
   cursor: pointer;
   scale: 1.1;
   background-color: #8c9eff;
 }
 
-.card4:hover .discord {
+.cards4:hover .discord {
   fill: white;
 }

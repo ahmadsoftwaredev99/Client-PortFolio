@@ -1,8 +1,6 @@
-import vedio from '../../../assets/Vedio/index.mp4'
+import black from '../../../assets/images/black.png'
 import Summary from "../../Sections/Summary";
 import Timeline from "../../Sections/timelineCard";
-import Project from "../../Sections/Project"
-import Project_1 from "../../Sections/project-1";
 import "./home.css";
 
 const Home = () => {
@@ -10,19 +8,15 @@ const Home = () => {
     <>
       <section>
         <div className="parent">
-          <video className="hero-video" src={vedio} autoPlay muted loop>
-          </video>
-          {/* <div className="data">
-            <h4>Mechanical Engineering Portfolio</h4>
-            <h1 className="clientName">Jonashem</h1>
-          </div> */}
+          <img className='hero-img' src={black} alt="imges" />
+          <div className='client-name'>
+            <h1>Jonshem Mechanical Engineer</h1>
+            <h5>Portfolio</h5>
+          </div>
         </div>
       </section>
-      <Summary/>
-      <Timeline/>
-      <Project/>
-      <Project_1/>
-
+      <Summary />
+      <Timeline />
     </>
   );
 };

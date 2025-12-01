@@ -11,7 +11,7 @@ export default function Timeline() {
           className={`timeline-item ${item?.side}`}
           key={index}>
           <div className="timeline-dot"><i className={item?.icon}></i></div>
-          <div className="timeline-card card shadow-sm">
+          <div className="timeline-card card ">
             <div className="card-body">
               <h6 className="fw-bold date">{item?.date}</h6>
               <p className="location">{item?.location}</p>

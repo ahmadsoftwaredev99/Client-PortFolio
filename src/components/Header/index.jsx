@@ -1,61 +1,71 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import './header.css';
+import "./header.css";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
+  // Scroll background change
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Close menu on link click
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
     <header className={scrolled ? "header scrolled" : "header"}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            <h1 className="client-name">JS</h1>
+
+          {/* Brand */}
+          <Link className="navbar-brand" to="/" onClick={closeMenu}>
+            <h1 className="client-JS">JS</h1>
           </Link>
+
+          {/* Toggler */}
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            onClick={() => setIsOpen(!isOpen)}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+          {/* Menu */}
+          <div className={isOpen ? "collapse navbar-collapse show" : "collapse navbar-collapse"}>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 list d-flex gap-4">
+
               <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/" onClick={closeMenu}>Home</Link>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link" to="/resume">Resume</Link>
+                <Link className="nav-link" to="/resume" onClick={closeMenu}>Resume</Link>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link" to="/projects">Projects</Link>
+                <Link className="nav-link" to="/projects" onClick={closeMenu}>Projects</Link>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/about" onClick={closeMenu}>About</Link>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <Link className="nav-link" to="/contact" onClick={closeMenu}>Contact</Link>
               </li>
+
             </ul>
           </div>
+
         </div>
       </nav>
     </header>
