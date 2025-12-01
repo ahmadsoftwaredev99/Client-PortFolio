@@ -8,14 +8,31 @@
 /* BACKGROUND IMAGE FULL WIDTH */
 .contact-hero {
   width: 100%;
-  height: 75vh;        /* slider-style height */
+  height: 75vh;
+  position: relative;    /* overlay ke liye required */
   overflow: hidden;
 }
 
+/* IMAGE */
 .contact-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* image ko crop karke perfect fullscreen banata hai */
+  object-fit: cover;
+  position: relative;
+  z-index: 1;            /* image niche hogi */
+}
+
+/* BLACK OVERLAY */
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55); /* HERE IS THE BLACK OVERLAY */
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* CONTENT SECTION */
@@ -23,8 +40,8 @@
   padding: 60px 40px;
   background: white;
   position: relative;
-  z-index: 1;
-  margin-top: -50px;  /* slight overlap look (optional) */
+  z-index: 10;
+  margin-top: -50px; 
 }
 
 /* MOBILE FIX */
