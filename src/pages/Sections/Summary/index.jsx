@@ -1,10 +1,17 @@
-import { logos_images } from "../../../components/constants";
+import { useEffect } from "react";
 import clientPost from "../../../assets/images/post.png";
-import "./summary.css";
-import { Link } from "react-router-dom";
 import { eexperiencecard } from "../../../components/ExperienceCard";
-
+import "./summary.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
 const Summary = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 300,      
+      once: false,       
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <>
       <section className="summary">
@@ -27,7 +34,7 @@ const Summary = () => {
               <div className="row justify-content-center align-items-start mt-4">
                 {eexperiencecard.map((item, index) => (
                   <div className="col-12 col-md-3 d-flex justify-content-center mb-3" key={index}>
-                    <div className="cards" >
+                    <div className="cards" data-aos={item?.animation}>
                       <div className="card1">
                         <h6>{item?.title}</h6>
                         <p className="small">{item?.description}</p>

@@ -1,18 +1,27 @@
+import AOS from "aos";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import {data} from '../../../components/constants'
+import "aos/dist/aos.css";
 import "./timeline.css"; 
 export default function Timeline() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,      
+      once: false,       
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <div className="timeline-container position-relative mb-5">
       <div className="timeline-line"></div>
-
       {data.map((item, index) => (
-        <div
-          className={`timeline-item ${item?.side}`}
+        <div className={`timeline-item ${item?.side}`}
+                data-aos={item?.animation}
           key={index}>
           <div className="timeline-dot"><i className={item?.icon}></i></div>
           <div className="timeline-card card ">
-            <div className="card-body">
+            <div className="card-body" >
               <h6 className="fw-bold date">{item?.date}</h6>
               <p className="location">{item?.location}</p>
               <h5 className="fw-bold title">{item?.title}</h5>
@@ -26,3 +35,4 @@ export default function Timeline() {
     </div>
   );
 }
+

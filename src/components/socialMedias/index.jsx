@@ -1,25 +1,22 @@
-  import { Link } from "react-router-dom";
-import { socialMediaData } from "../constants";
-import "./socialmedia.css";
-
+import { socialData } from "../constants";
+import './socialmedia.css'
 const SocialMedia = () => {
   return (
-    <div className="main">
-      <div className="up">
-        {socialMediaData.slice(0,2).map((item, index) => (
-          <Link key={index} to={item.url} target="_blank" className={item.containerClass}>
-            {item.svg}
-          </Link>
-        ))}
+    <>
+      <div className="cards">
+        <ul>
+          {socialData.map((item, index) => (
+            <li className="iso-pro" key={index}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <a href={item?.link} target="_blank" >{item?.icon}</a>
+              <div className="text">{item?.title}</div>
+            </li>
+          ))}
+        </ul>
       </div>
-      <div className="down">
-        {socialMediaData.slice(2).map((item, index) => (
-          <Link key={index} to={item.url} target="_blank" className={item.containerClass}>
-            {item.svg}
-          </Link>
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 

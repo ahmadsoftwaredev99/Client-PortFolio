@@ -1,13 +1,15 @@
 #root{
     display: flex;
     flex-direction: column;
-    height: 100vh;    
+    height: 100vh; 
 }
 #root::selection{
     background-color: #fb2056;;
 }
 main{
     flex: 1 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: "client";

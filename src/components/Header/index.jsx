@@ -6,7 +6,6 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  // Scroll background change
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -15,22 +14,21 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close menu on link click
-  const closeMenu = () => {
-    setIsOpen(false);
-  };  
-
+ const closeMenu = () => {
+  setIsOpen(false);
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+  
   return (
     <header className={`${scrolled ? "header scrolled" : "header"} ${isOpen ? "menu-open" : ""}`}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
-
-          {/* Brand */}
           <Link className="navbar-brand" to="/" onClick={closeMenu}>
             <h1 className="client-JS">JS</h1>
           </Link>
-
-          {/* Toggler */}
           <button
             className="navbar-toggler"
             type="button"

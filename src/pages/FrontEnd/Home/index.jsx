@@ -10,7 +10,7 @@ const Home = () => {
         <div className="parent">
           <img className='hero-img' src={black} alt="imges" />
           <div className='client-name'>
-            <h1>Jonshem Mechanical Engineer</h1>
+            <h1>Remli Industrial Engineer</h1>
             <h5>Portfolio</h5>
           </div>
         </div>
