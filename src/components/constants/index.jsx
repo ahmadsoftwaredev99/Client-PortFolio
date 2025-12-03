@@ -76,7 +76,7 @@ export const logos_images = [
 export const socialData = [
   {
     title: "Facebook",
-     link: "https://facebook.com",
+    link: "https://facebook.com",
     icon: (
       <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg" className="svg">
         <path
@@ -106,5 +106,68 @@ export const socialData = [
           ></path>
       </svg>
     ),
+  },
+];
+
+
+export const projects = [
+  // ----- Internships (3) -----
+  {
+    id: 1,
+    img: "",
+    title: "Industrial Automation Internship",
+    category: "Internship",
+    desc: "Worked on PLC programming, sensor integration, and improving automated production workflows."
+  },
+  {
+    id: 2,
+    img: "",
+    title: "Manufacturing Process Optimization Internship",
+    category: "Internship",
+    desc: "Focused on reducing cycle time, improving line balancing, and optimizing overall process efficiency."
+  },
+  {
+    id: 3,
+    img: "",
+    title: "Quality Control & Inspection Internship",
+    category: "Internship",
+    desc: "Performed quality checks, defect analysis, and assisted in ensuring compliance with industry standards."
+  },
+
+  // ----- Personal (5) -----
+  {
+    id: 4,
+    img: "",
+    title: "Industrial Portfolio & Resume Website",
+    category: "Personal",
+    desc: "A professional portfolio website showcasing industrial engineering projects, skills, and experience."
+  },
+  {
+    id: 5,
+    img: "",
+    title: "Lean Manufacturing Blog Platform",
+    category: "Personal",
+    desc: "A platform sharing concepts on Lean, Kaizen, 5S, and industrial improvement methods."
+  },
+  {
+    id: 6,
+    img: "",
+    title: "Maintenance & Cost Management Tool",
+    category: "Personal",
+    desc: "A simple system to log maintenance activities, track machine downtime, and manage operational costs."
+  },
+  {
+    id: 7,
+    img: "",
+    title: "Industrial Production Team Dashboard",
+    category: "Team",
+    desc: "A shared team dashboard for monitoring production KPIs and daily manufacturing progress."
+  },
+  {
+    id: 8,
+    img: "",
+    title: "Industrial Design & Process Improvement Team App",
+    category: "Team",
+    desc: "A collaboration app for engineering teams to manage process improvements and workflow tasks."
   },
 ];

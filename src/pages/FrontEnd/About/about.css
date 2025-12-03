@@ -1,0 +1,67 @@
+/* -------------------- ABOUT SECTION -------------------- */
+.about-section {
+  position: relative;
+  width: 100%;
+}
+
+/* Background Image */
+.about-section .img {
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+}
+
+/* Tablet screens (768px - 1024px including 912px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-section .img {
+    height: 35vh; 
+  }
+}
+
+/* Mobile height */
+@media (max-width: 576px) {
+  .about-section .img {
+    height: 28vh;
+  }
+}
+
+.about-imgs {
+  width: 100%;
+  max-width: 420px; /* PERFECT on large screens */
+  height: auto;
+  aspect-ratio: 4/5; /* No stretch, perfect portrait */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Mobile Title Size */
+@media (max-width: 576px) {
+  .about-title h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Large Screens (Fix: NO huge height) */
+@media screen and (min-width: 1200px) {
+  .about-imgs {
+    max-width: 420px; /* Fixed width */
+    max-height: 520px; /* Prevents becoming very tall */
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about-imgs {
+    max-width: 260px !important;
+  }
+}
+
+/* Small Screens */
+@media screen and (max-width: 767px) {
+  .about-imgs {
+    max-width: 260px;
+    margin: 0 auto;
+    display: block;
+  }
+}

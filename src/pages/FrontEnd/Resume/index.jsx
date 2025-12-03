@@ -2,7 +2,6 @@ import resume from "../../../assets/images/resume.jpg";
 import cv from "../../../assets/images/cv.png";
 import Client_Resume from "../../../assets/CV/REMLI_CV.pdf";
 import "./resume.css";
-import { Link } from "react-router-dom";
 const Resume = () => {
   return (
     <section>
