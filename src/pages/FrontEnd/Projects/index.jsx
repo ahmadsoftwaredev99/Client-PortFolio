@@ -23,7 +23,7 @@ const Projects = () => {
 
       <div className="text-dark text-center">
         <Title level={3} style={{ fontFamily: "client", marginTop: "1rem" }}>
-          Click Each Picture to learn more
+          Click See Details to learn more
         </Title>
 
         {/* Filter Buttons */}
