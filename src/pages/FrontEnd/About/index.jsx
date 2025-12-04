@@ -32,8 +32,8 @@ const About = () => {
 
       <div className="container">
         <div className="row mt-3 d-flex flex-column-reverse flex-md-row">
-          <div className="col-12 col-md-6">
-            <div data-aos="fade-right" className="details mt-4" >
+          <div className="col-12 col-md-6 d-flex justify-content-center  text-center text-md-start">
+            <div data-aos="fade-right" className="details mt-4">
               <Title level={1}>About Me</Title>
               <p className="fs-5" style={{ fontFamily: "client" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit

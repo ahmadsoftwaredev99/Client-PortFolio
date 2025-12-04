@@ -43,7 +43,7 @@ const Projects = () => {
           <div className="row">
             {filteredProjects.map((item,index) => (
             <div className="col-12 col-md-3 mb-5 d-flex justify-content-center " key={filter + index}>
-              <div className="cardss  project-card-animate" data-aos="zoom-in" >
+              <div className="cardss shadow-sm project-card-animate" data-aos="zoom-in" >
                 <div className="h-75">
                   <Image src={item?.img} alt="projects" className="image"/>
                 </div>
