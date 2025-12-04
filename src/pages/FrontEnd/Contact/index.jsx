@@ -1,4 +1,4 @@
-import { Button, Col, Form, Input, Row, Space } from "antd";
+import { Button, Col, Form, Input, message, Row, Space } from "antd";
 import { Link } from "react-router-dom";
 import gmail from "../../../assets/images/gmail.png";
 import Title from "antd/es/typography/Title";
@@ -7,27 +7,33 @@ import TextArea from "antd/es/input/TextArea";
 import SocialMedia from "../../../components/socialMedias";
 import "./contact.css";
 
+
 const Contact = () => {
+  const [form] = Form.useForm();
+  const onFinish = (values) => {
+    form.resetFields();  
+  };
+
   return (
     <section className="contact">
       <div className="contact-hero">
         <img src={contact} alt="contact" className="contact-img" />
       </div>
       <div className="contact-content container mt-3">
-        <Form layout="vertical">
+        <Form form={form} layout="vertical" onFinish={onFinish}>
           <Row gutter={[40, 40]}>
             <Col xs={24} md={12}>
               <Title>Get In Touch</Title>
-              <Form.Item label="Your Name:" required>
-                <Input placeholder="Enter Your Name" name="userName" />
+              <Form.Item label="Your Name:" required name="userName">
+                <Input placeholder="Enter Your Name"   />
               </Form.Item>
-              <Form.Item label="Email:" required>
-                <Input placeholder="Enter Your Email" name="userEmail" />
+              <Form.Item label="Email:" required name="userEmail">
+                <Input placeholder="Enter Your Email"   />
               </Form.Item>
-              <Form.Item label="Message:" required>
-                <TextArea placeholder="Describe Your Ideas....!"rows={5}name="description"style={{ resize: "none" }}/>
+              <Form.Item label="Message:" required name="description">
+                <TextArea placeholder="Describe Your Ideas....!"rows={5} style={{ resize: "none" }}  />
               </Form.Item>
-              <Button type="primary" block style={{ height: "40px" }}>
+              <Button type="primary" block style={{ height: "40px" }} htmlType="submit" >
                 Submit
               </Button>
             </Col>

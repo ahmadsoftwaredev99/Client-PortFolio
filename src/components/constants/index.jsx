@@ -110,25 +110,36 @@ export const socialData = [
 ];
 
 
+
+
+import portfolio from '../../assets/images/portfolio.jpg'
+import blog from '../../assets/images/blog-plateform.jpg'
+import manufacturing from '../../assets/images/manufacturing.jpg'
+import app from '../../assets/images/app.jpg'
+import automation from '../../assets/images/automation.jpg'
+import dashboard from '../../assets/images/dashboard.jpg'
+import internship from '../../assets/images/internship.jpg'
+import tool from '../../assets/images/tool.jpg'
+
 export const projects = [
   // ----- Internships (3) -----
   {
     id: 1,
-    img: "",
+    img: automation,
     title: "Industrial Automation Internship",
     category: "Internship",
     desc: "Worked on PLC programming, sensor integration, and improving automated production workflows."
   },
   {
     id: 2,
-    img: "",
+    img: manufacturing,
     title: "Manufacturing Process Optimization Internship",
     category: "Internship",
     desc: "Focused on reducing cycle time, improving line balancing, and optimizing overall process efficiency."
   },
   {
     id: 3,
-    img: "",
+    img: internship,
     title: "Quality Control & Inspection Internship",
     category: "Internship",
     desc: "Performed quality checks, defect analysis, and assisted in ensuring compliance with industry standards."
@@ -137,35 +148,35 @@ export const projects = [
   // ----- Personal (5) -----
   {
     id: 4,
-    img: "",
+    img: portfolio,
     title: "Industrial Portfolio & Resume Website",
     category: "Personal",
     desc: "A professional portfolio website showcasing industrial engineering projects, skills, and experience."
   },
   {
     id: 5,
-    img: "",
+    img: blog,
     title: "Lean Manufacturing Blog Platform",
     category: "Personal",
     desc: "A platform sharing concepts on Lean, Kaizen, 5S, and industrial improvement methods."
   },
   {
     id: 6,
-    img: "",
+    img: tool,
     title: "Maintenance & Cost Management Tool",
     category: "Personal",
     desc: "A simple system to log maintenance activities, track machine downtime, and manage operational costs."
   },
   {
     id: 7,
-    img: "",
+    img: dashboard,
     title: "Industrial Production Team Dashboard",
     category: "Team",
     desc: "A shared team dashboard for monitoring production KPIs and daily manufacturing progress."
   },
   {
     id: 8,
-    img: "",
+    img: app,
     title: "Industrial Design & Process Improvement Team App",
     category: "Team",
     desc: "A collaboration app for engineering teams to manage process improvements and workflow tasks."
