@@ -1,10 +1,10 @@
-import manPic from "../../../assets/images/handsome-man.jpg";
-import aboutPic from "../../../assets/images/about-us.jpg";
 import { Popover, Space } from "antd";
-import Title from "antd/es/typography/Title";
 import { Link } from "react-router-dom";
-import AOS from "aos";
 import { useEffect } from "react";
+import remli from '../../../assets/images/remli.jpg'
+import aboutPic from "../../../assets/images/about-us.jpg";
+import Title from "antd/es/typography/Title";
+import AOS from "aos";
 import "./about.css";
 
 
@@ -36,19 +36,20 @@ const About = () => {
             <div data-aos="fade-right" className="details mt-4">
               <Title level={1}>About Me</Title>
               <p className="fs-5" style={{ fontFamily: "client" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                iusto ullam ad magnam fugit maiores nesciunt delectus eligendi
-                beatae cum Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Illum ipsum illo voluptatibus quidem molestias expedita
-                quas omnis culpa consectetur quisquam. Esse hic cumque porro ea
-                quam unde nesciunt dolores!.
+                I’m an industrial engineering Student with a strong mechanical mindset and a straightforward, results-focused approach. I work by understanding systems clearly, spotting weaknesses, and fixing them with practical, technical solutions.
               </p>
 
               <p className="fs-5" style={{ fontFamily: "client" }}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-                praesentium omnis est hic quod modi, officiis eius autem ab
-                veritatis enim quisquam ea, et recusandae iusto dolore! Dolorum,
-                natus ipsum.
+                CAD is one of my main passions alongside cars. I spend a lot of time designing and modeling parts, and I enjoy turning mechanical ideas into precise 3D components. I also worked in an automotive engineering design office on the Body-in-White perimeter, using CATIA to develop structural parts and interfaces for Stellantis Group Cars.
+              </p>
+              <p className="fs-5" style={{ fontFamily: "client" }}>
+              Cars are the other major side of my life. I’m deeply involved in DIY mechanical work—engine diagnostics, repairs, upgrades, and understanding how every subsystem behaves. The hands-on work and the CAD design constantly reinforce each other.
+              </p>
+              <p className="fs-5" style={{ fontFamily: "client" }}>
+              I’m currently completing a three-year apprenticeship in the Renault Group’s automotive engine factory, which gives me real experience with manufacturing processes, quality standards, and how mechanical design becomes actual production hardware.
+              </p>
+              <p className="fs-5" style={{ fontFamily: "client" }}>
+              Everything I do combines engineering logic, practical work, and precise 3D design to create solutions that actually work.
               </p>
               <div className="mt-4 mb-4">
                 <Space>
@@ -67,7 +68,7 @@ const About = () => {
           </div>
           <div className="col-12 col-md-6 mb-5">
             <div data-aos="fade-left" className="details mt-4 text-center">
-              <img src={manPic} alt="Profile" className="about-imgs" />
+              <img src={remli} alt="Profile" className="img-fluid" style={{borderRadius:'8px'}} />
             </div>
           </div>
         </div>
