@@ -39,7 +39,7 @@ const Header = () => {
 
           {/* Menu */}
           <div className={isOpen ? "collapse navbar-collapse show" : "collapse navbar-collapse"}>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 list d-flex gap-4">
+            <ul className="navbar-nav m-auto mb-2 mb-lg-0 list d-flex gap-4">
 
               <li className="nav-item">
                 <Link className="nav-link" to="/" onClick={closeMenu}>Home</Link>
