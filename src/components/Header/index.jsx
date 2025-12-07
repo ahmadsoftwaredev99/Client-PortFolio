@@ -26,9 +26,9 @@ const Header = () => {
     <header className={`${scrolled ? "header scrolled" : "header"} ${isOpen ? "menu-open" : ""}`}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
-          <Link className="navbar-brand" to="/" onClick={closeMenu}>
+          {/* <Link className="navbar-brand" to="/" onClick={closeMenu}>
             <h1 className="client-JS">RAH</h1>
-          </Link>
+          </Link> */}
           <button
             className="navbar-toggler"
             type="button"
