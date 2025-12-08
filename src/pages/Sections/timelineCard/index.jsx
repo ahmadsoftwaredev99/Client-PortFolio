@@ -1,6 +1,6 @@
 import AOS from "aos";
+import { Popover } from "antd";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import {data} from '../../../components/constants'
 import "aos/dist/aos.css";
 import "./timeline.css"; 
@@ -27,7 +27,9 @@ export default function Timeline() {
               <h5 className="fw-bold title">{item?.title}</h5>
               <img src={item?.img} alt="img" className="img-fluid rounded mb-2"/>
               <p className="decs">{item?.desc}</p>
-              <Link className="link-offset-2 link-underline link-underline-opacity-0"><p className="text-danger fs-5">Read More</p></Link>
+              <Popover content={item?.content} title='More Description' trigger='click'>
+                <h6 className="link-offset-2 link-underline link-underline-opacity-0 text-danger" style={{cursor:'pointer'}}>Read More</h6>
+              </Popover>
             </div>
           </div>
         </div>
