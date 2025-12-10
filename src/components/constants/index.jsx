@@ -1,28 +1,30 @@
 import firstCard from "../../assets/images/1stcard.jpg";
 import secondCard from "../../assets/images/2ndcard.jpg";
 import thirdCard from "../../assets/images/3rdcard.jpg";
+import forthCard from "../../assets/images/forthCards.jpg";
+
 // import car from "../../assets/images/car.png";
 export const data = [
-  {
+{
     animation: "fade-right",
-    icon: "fa-solid fa-industry",
+    icon: "fa-solid fa-radiation",
     side: "right",
     title: "Maufacturing Engineering Apprentice (DCI and HR engine for Mercedes)",
     date: "September 2024– Present",
     location: "Renault Ampere Cl´eon Factory",
-    img: firstCard,
+    img: forthCard,
     desc: "• Set up of a Web Application for Managing Machine Tool Spare Parts Inventories with 1500 + references  ",
     content:<p style={{width:'250px'}}>• Lead daily quality and maintenance follow-up meetings using QRQC, QRR, PMP, and PMA methodologies. <br />
       • Digitalize the production line output using cameras and laser sensors for automated quality control, aiming to reduce human error.
       </p>},
   {
     animation: "fade-left",
-    icon: "fa-solid fa-plane",
+    icon: "fa-solid fa-car",
     side: "left",
     title: "Mechanical Designer (Stellantis Ducato/Boxer BEV Project)",
     date: "August 2022– July 2023",
     location: "Segula Technologies",
-    img: secondCard,
+    img: thirdCard,
     desc: "• Design of BIW Sheet Metal Parts with CATIA from reference surfaces (96 deliverables: Doors, Hoods, Crossmembers,Wing lining, Trunk rebate, Front face).",
     content:<p style={{width:'250px'}}>• Preparation of Supports and participation in Weekly Reporting Meetings in English with Stellantis Clients and Suppliers.<br />
       • Product lifecycle management under PLM ENOVIA V6 DASSAULT SYSTEMES ( 100+ Requests Processed : Pdef, Prea, Pa, CX, ECR, ECO, BOM COM Request)
@@ -30,18 +32,29 @@ export const data = [
   },
   {
     animation: "fade-right",
-    icon: "fa-solid fa-car",
+    icon: "fa-solid fa-plane",
     side: "right",
     title: "Engineering Intern",
     date: "April 2022– June 2022",
     location: "Safrane Nacelles",
-    img: thirdCard,
+    img: secondCard,
     desc: "• Improvement of the MRO (Maintenance, Repair, Overhaul) time of the Airbus A350 thrust reverser in the Moving Linephase.",
     content:<p style={{width:'250px'}}>Optimized the MRO cycle time of the Airbus A350 thrust reverser in the Moving Line phase 
     by analyzing operational constraints and implementing process improvements. Achieved 
     measurable reductions in turnaround time while ensuring full compliance with safety and 
     airworthiness standards.</p>
   },
+   {
+    animation: "fade-left",
+    icon: "fa-solid fa-industry",
+    side: "left",
+    title: "Maintenance Technician",
+    date: "June 2021 - july 2021",
+    location: "Heidelberg Cement Group",
+    img: firstCard,
+    desc: "• Conducted mechanical diagnostics and preventive maintenance on the rotary kiln, including shell temperature monitoring and lubrication of support bearings.  ",
+    content:<p style={{width:'250px'}}> Assisted in correcting kiln axial drift, inspecting refractory wear, and verifying alignment of drive gear and pinion. Participated in planned shutdowns performing component replacement, torque checks, and integrity testing of high-temperature rotating systems.
+      </p>},
   // {
   //   animation: "fade-left",
   //   icon: "fa-solid fa-car",
