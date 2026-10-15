@@ -17,7 +17,7 @@ export default function Timeline() {
       <div className="timeline-line"></div>
       {data.map((item, index) => (
         <div className={`timeline-item ${item?.side}`}
-                data-aos={item?.animation}
+              data-aos={item?.animation}
           key={index}>
           <div className="timeline-dot"><i className={item?.icon}></i></div>
           <div className="timeline-card card ">

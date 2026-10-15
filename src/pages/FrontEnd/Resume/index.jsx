@@ -9,7 +9,7 @@ const Resume = () => {
         <img src={resume} alt="resume" className=" img" />
       </div>
       <div className="resume img-fluid ">
-        <img src={cv} alt="CV" />
+        {/* <img src={cv} alt="CV" /> */}
         <div className="btn-wrap">
           <a className="link" href={Client_Resume} download="REMLI_CV.pdf">
           <button className="download-btn">
