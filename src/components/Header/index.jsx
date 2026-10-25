@@ -45,9 +45,9 @@ const Header = () => {
                 <Link className="nav-link" to="/" onClick={closeMenu}>Home</Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/resume" onClick={closeMenu}>Resume</Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link className="nav-link" to="/projects" onClick={closeMenu}>Projects</Link>

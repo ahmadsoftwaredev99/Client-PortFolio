@@ -59,9 +59,9 @@ const About = () => {
                     Click to know more
                   </button>
                 </Popover>
-                <Link to='/resume'>
+                {/* <Link to='/resume'>
                   <button className="btn btn-dark ms-5" style={{borderRadius:'8px'}}>My Resume</button>
-                </Link>
+                </Link> */}
                 </Space>
               </div>
             </div>
